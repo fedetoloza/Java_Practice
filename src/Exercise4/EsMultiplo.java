@@ -13,13 +13,14 @@ public class EsMultiplo {
         int valor1 = scanner.nextInt();
         scanner.close();
 
-        if (esMultiploDe2(valor1) == 0){
+        esMultiploDe2(valor1);
+    }
+    // se movio la logica del ejercicio al metodo esMultiploDe2
+    public static void esMultiploDe2(int valor1){
+        if ((valor1 % 2) == 0){
             System.out.println(valor1 +" es divisible por 2");
         } else {
             System.out.println(valor1 + " no es divisible por 2");
         }
-    }
-    public static int esMultiploDe2(int valor1){
-        return (valor1 % 2);
     }
 }
